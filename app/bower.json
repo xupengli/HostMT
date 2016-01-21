@@ -1,0 +1,16 @@
+{
+  "name": "hostmt",
+  "main": "",
+  "authors": [
+    "chaitao"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "angularjs": "*",
+    "bootstrap": "~3.3.*"
+  }
+}
