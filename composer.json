@@ -8,11 +8,20 @@
     "php": ">=5.5.9"
   },
   "scripts": {
-    "post-install-cmd":[
+    "post-install-cmd": [
       "sudo cp mhosts.php  /usr/bin/mhosts"
     ],
     "post-update-cmd": [
       "sudo cp mhosts.php  /usr/bin/mhosts"
+    ],
+    "post-package-install": [
+      "sudo cp mhosts.php  /usr/bin/mhosts"
+    ],
+    "post-package-update": [
+      "sudo cp mhosts.php  /usr/bin/mhosts"
+    ],
+    "pre-package-uninstall": [
+      "mhosts -r"
     ]
   }
 }

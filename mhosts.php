@@ -40,7 +40,7 @@ class MHosts
     private function version()
     {
         $msg = <<<version
-version 1.1
+version 1.2
 version;
         $this->echoTips($msg);
     }
