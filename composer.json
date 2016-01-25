@@ -3,7 +3,6 @@
   "keywords": ["manage hosts tool", "hosts", "manage", "tool"],
   "description": "a tool for hosts",
   "license": "MIT",
-  "type": "project",
   "require": {
     "php": ">=5.5.9"
   },
@@ -18,6 +17,9 @@
       "sudo cp mhosts.php  /usr/bin/mhosts"
     ],
     "post-package-update": [
+      "sudo cp mhosts.php  /usr/bin/mhosts"
+    ],
+    "post-autoload-dump": [
       "sudo cp mhosts.php  /usr/bin/mhosts"
     ],
     "pre-package-uninstall": [
