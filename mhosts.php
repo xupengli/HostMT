@@ -37,6 +37,14 @@ class MHosts
         "--version" => "version"
     ];
 
+    private function version()
+    {
+        $msg = <<<version
+version 1.1
+version;
+        $this->echoTips($msg);
+    }
+
     public function __construct()
     {
         $this->setConfigPath(getenv("HOME") . DIRECTORY_SEPARATOR . ".mhosts" . DIRECTORY_SEPARATOR);
@@ -248,14 +256,6 @@ mhosts is a tool of hosts for mac/linux, it dependent php
 --version                       the version
 help;
 ;
-        $this->echoTips($msg);
-    }
-
-    private function version()
-    {
-        $msg = <<<version
-version 1.0
-version;
         $this->echoTips($msg);
     }
 
