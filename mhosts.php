@@ -235,6 +235,7 @@ class MHosts
     private function help()
     {
         $msg = <<<help
+
 mhosts is a tool of hosts for mac/linux, it dependent php
 
 -l                              list of all hosts
