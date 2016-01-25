@@ -6,5 +6,13 @@
   "type": "project",
   "require": {
     "php": ">=5.5.9"
+  },
+  "scripts": {
+    "post-install-cmd":[
+      "sudo cp mhosts.php  /usr/bin/mhosts"
+    ],
+    "post-update-cmd": [
+      "sudo cp mhosts.php  /usr/bin/mhosts"
+    ]
   }
 }
