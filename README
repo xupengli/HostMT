@@ -1,0 +1,5 @@
+##INSTALL
+```shell
+git clone https://github.com/TeoChoi/HostMT.git
+cp HostMT/mhosts.php /usr/bin/mhosts
+```
