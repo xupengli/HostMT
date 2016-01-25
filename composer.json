@@ -1,6 +1,6 @@
 {
   "name": "teochoi/mhosts",
-  "keywords": ["manage hosts tool", "hosts", "manage", "tool"]
+  "keywords": ["manage hosts tool", "hosts", "manage", "tool"],
   "description": "a tool for hosts",
   "license": "MIT",
   "type": "project",

@@ -9,7 +9,7 @@
  * mhosts -a  添加mhosts内容
  * mhosts -l  展示所有存在的hosts环境
  * mhosts -s local 切换到local环境的hosts
- * mhosts -w local 查看local环境的配置hosts
+ * mhosts -v local 查看local环境的配置hosts
  * mhosts -e local 更改local环境的数据
  * mhosts -r        还原初始化前的hosts数据
  * mhosts --current 查看当前所有激活的配置
@@ -29,7 +29,7 @@ class MHosts
         "-a" => "addHosts",
         "-l" => "listHosts",
         "-s" => "switchHosts",
-        "-w" => "watchHosts",
+        "-v" => "viewHosts",
         "-e" => "editHosts",
         "-r" => "restore",
         "-h" => "help",
@@ -193,7 +193,7 @@ class MHosts
     /**
      * watch hosts detail
      */
-    private function watchHosts()
+    private function viewHosts()
     {
         $args = func_get_args();
 
@@ -241,7 +241,7 @@ mhosts is a tool of hosts for mac/linux, it dependent php
 -l                              list of all hosts
 -a [local]                      add a hosts
 -s [local, local1, local2...]   switch local env hosts
--w [local]                      watch local env hosts
+-v [local]                      view local env hosts
 -e [local]                      edit local env hosts data
 -r                              restore the default hosts
 --current                       list of the active hosts
